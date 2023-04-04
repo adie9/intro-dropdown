@@ -37,6 +37,12 @@ header {
   border: 1px solid;
   border-radius: 10px;
   padding: 10px 20px;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+}
+.login-register #register:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 98%);
 }
 
 .icon-menu {
@@ -68,6 +74,10 @@ header {
   width: 111px;
   margin-top: 20px;
   font-size: 1rem;
+}
+.learn-more:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 98%);
 }
 
 .images-container {
