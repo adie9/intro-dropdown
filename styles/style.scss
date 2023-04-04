@@ -53,6 +53,11 @@ header {
 .main-text {
     margin: 20px 10px;
     text-align: center;
+
+    p {
+        line-height: 20px;
+        margin-top: 20px;
+    }
 }
 
 .hero-img {
