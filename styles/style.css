@@ -8,8 +8,17 @@ body {
   font-family: "Epilogue", sans-serif;
 }
 
-.wrapper {
-  margin: 15px;
+h1 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 41%);
+}
+
+header {
+  margin: 20px 10px;
 }
 
 .nav-container {
@@ -26,9 +35,44 @@ body {
   display: none;
 }
 
+.icon-menu {
+  align-self: center;
+}
+
+.main-text {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.hero-img {
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.learn-more {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+.images-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.images-container img {
+  width: 50px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 20px auto;
 }
 
 .attribution a {
