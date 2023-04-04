@@ -39,29 +39,49 @@ header {
 }
 
 .nav-items {
-    display: none;
+    display: flex;
     list-style: none;
 }
 
-.login-register {
-    display: none;
+.close-icon {
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
-    #login {
-        margin-right: 30px;
-    }
+#register {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: $Almost-White;
+    background-color: $Almost-Black;
 
-    #register {
-        border: 1px solid;
-        border-radius: 10px;
-        padding: 10px 20px;
-        color: $Almost-White;
-        background-color: $Almost-Black;
-
-        &:hover {
-            @include invert-color();
-        }
+    &:hover {
+        @include invert-color();
     }
 }
+
+#login {
+    
+}
+
+.dropdown {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
 
 .icon-menu {
     align-self: center;
@@ -126,6 +146,47 @@ header {
 }
 
 
+
+@media screen and (max-width: 899px) {
+    .nav-items {
+        flex-direction: column;
+        position: fixed;
+        background-color: lightblue;
+        inset: 0 0 0 40%;
+        display: none;
+        
+
+        a {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        
+    }
+
+    .login-register {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        #login {
+            margin: 100px 0 10px 0;
+        }
+
+        #register {
+            width: 150px;
+            margin: 0 auto;
+        }
+    }
+
+    .dropdown {
+        background-color: lightblue;
+        position: relative;
+        top: 10px;
+        left: 30px;
+    }
+}
+
 @media screen and (min-width: 900px) {
     .wrapper {
         width: 1400px;
@@ -141,21 +202,36 @@ header {
     }
     
     .nav-items {
-        display: flex;
         justify-content: space-evenly;
         width: 500px;
     }
 
-    .login-register {
-        display: block;
-        margin-left: auto;
+    .close-icon {
+        display: none;
+    }
 
+    #login {
+        margin-right: 30px;
+    }
+
+    .dropdown {
+        background-color: $Almost-White;
+        border-radius: 10px;
+        position: fixed;
+        box-shadow: 2px 2px 10px $Medium-Gray;
+        padding: 20px;
+        
 
     }
+
+        
+
+    
 
     .icon-menu {
         display: none;
     }
+
     
     // Main section stylings
     main {
