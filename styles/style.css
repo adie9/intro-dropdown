@@ -27,8 +27,16 @@ header {
   list-style: none;
 }
 
-.login {
+.login-register {
   display: none;
+}
+.login-register #login {
+  margin-right: 30px;
+}
+.login-register #register {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 .icon-menu {
@@ -86,6 +94,25 @@ header {
   .wrapper {
     width: 1400px;
     margin: 0 auto;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+  }
+  .login-register {
+    display: block;
+    margin-left: auto;
+  }
+  .icon-menu {
+    display: none;
   }
   main {
     display: grid;
