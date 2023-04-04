@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-section-with-dropdown-using-html-css-scss-vanilla-js--y5YIsyI3W](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-using-html-css-scss-vanilla-js--y5YIsyI3W)
+- Live Site URL: [https://intro-dropdown-orcin.vercel.app/](https://intro-dropdown-orcin.vercel.app/)
 
 ## My process
 
