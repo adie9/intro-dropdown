@@ -61,9 +61,12 @@ header {
 }
 
 .hero-img {
-    width: 320px;
     display: block;
     margin: 0 auto;
+    
+    img {
+        width: 100%;
+    }
 }
 
 .learn-more {
@@ -95,4 +98,21 @@ header {
 }
 .attribution a {
      color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 'main-text hero-img';
+    }
+
+    .main-text {
+        grid-area: main-text;
+    }
+
+    .hero-img {
+        grid-area: hero-img;
+    }
 }

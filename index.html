@@ -37,7 +37,10 @@
       
     
     <main>
-      <img class="hero-img" src="./images/image-hero-mobile.png" alt="hero-mobile">
+      <picture class="hero-img">
+        <source media="(min-width: 900px)" srcset="./images/image-hero-desktop.png">
+        <img src="./images/image-hero-mobile.png" alt="hero-img">
+      </picture>
       
       <div class="main-text">
         <h1>Make remote work</h1>
