@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/style.css">
@@ -11,33 +16,42 @@
 </head>
 <body>
 
-  <header>
-    Features
-    Company
-    Careers
-    About
-
-    Login
-    Register
-  </header>
-
- 
-
-  <main>
-    Make remote work
-
-    Get your team in sync, no matter your location. Streamline processes, 
-    create team rituals, and watch productivity soar.
-
-    Learn more
-  </main>
+  <div class="wrapper">
+    <header>
+      <nav class="nav-container">
+        <img src="./images/logo.svg" alt="logo">
+        <ul class="nav-items">
+          <li>Features</li>
+          <li>Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="login">
+          Login
+          Register
+        </div>
+        <img src="./images/icon-menu.svg" alt="menu">
+      </nav>
+    </header>
+    
+      
+    
+    <main>
+      Make remote work
   
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </footer>
+      Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.
+  
+      Learn more
+    </main>
+    
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </div>
 
   <script src="./index.js"></script>
 </body>
