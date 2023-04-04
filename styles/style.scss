@@ -14,14 +14,11 @@ $body-fs: 18px;
 
 body {
     font-family: 'Epilogue', sans-serif;
+    font-size: $body-fs;
 }
 
-h1 {
-    font-size: 1.8rem;
-}
 
 p {
-    font-size: 0.8rem;
     color: $Medium-Gray;
 }
 
@@ -50,7 +47,7 @@ header {
 }
 
 // Main section stylings
-.main-text {
+.main-content {
     margin: 20px 10px;
     text-align: center;
 
@@ -73,9 +70,12 @@ header {
     color: $Almost-White;
     background-color: $Almost-Black;
     border-radius: 10px;
-    padding: 10px 20px;
-    display: block;
-    margin: 20px auto;
+    padding: 10px 10px;
+    width: 111px;
+    margin-top: 20px;
+    font-size: 1rem;
+    
+    
 }
 
 // Footer sectino stylings
@@ -102,17 +102,58 @@ header {
 
 
 @media screen and (min-width: 900px) {
+    .wrapper {
+        width: 1400px;
+        margin: 0 auto;
+    }
+    
     main {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 'main-text hero-img';
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'main-content hero-img';
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+        column-gap: 50px;
+        
     }
 
-    .main-text {
-        grid-area: main-text;
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 100px;
+        text-align: left;
+        max-width: 500px;
+        justify-self: center;
+        
+        
+        grid-area: main-content;
+
+        h1 {
+            font-size: 4em;
+            
+            span {
+                &::after {
+                    content: "\a";
+                    white-space: pre;
+                }
+            }
+        }
+
+        p {
+            max-width: 500px;
+            line-height: 30pt;
+        }
+
     }
 
     .hero-img {
         grid-area: hero-img;
+
+        justify-self: center;
+        max-width: 556px;
     }
+    
+
 }

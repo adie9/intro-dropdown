@@ -6,14 +6,10 @@
 
 body {
   font-family: "Epilogue", sans-serif;
-}
-
-h1 {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 p {
-  font-size: 0.8rem;
   color: hsl(0, 0%, 41%);
 }
 
@@ -39,11 +35,11 @@ header {
   align-self: center;
 }
 
-.main-text {
+.main-content {
   margin: 20px 10px;
   text-align: center;
 }
-.main-text p {
+.main-content p {
   line-height: 20px;
   margin-top: 20px;
 }
@@ -60,9 +56,10 @@ header {
   color: hsl(0, 0%, 98%);
   background-color: hsl(0, 0%, 8%);
   border-radius: 10px;
-  padding: 10px 20px;
-  display: block;
-  margin: 20px auto;
+  padding: 10px 10px;
+  width: 111px;
+  margin-top: 20px;
+  font-size: 1rem;
 }
 
 .images-container {
@@ -86,15 +83,45 @@ header {
 }
 
 @media screen and (min-width: 900px) {
+  .wrapper {
+    width: 1400px;
+    margin: 0 auto;
+  }
   main {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "main-text hero-img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main-content hero-img";
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
-  .main-text {
-    grid-area: main-text;
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 100px;
+    text-align: left;
+    max-width: 500px;
+    justify-self: center;
+    grid-area: main-content;
+  }
+  .main-content h1 {
+    font-size: 4em;
+  }
+  .main-content h1 span::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .main-content p {
+    max-width: 500px;
+    line-height: 30pt;
   }
   .hero-img {
     grid-area: hero-img;
+    justify-self: center;
+    max-width: 556px;
   }
 }/*# sourceMappingURL=style.css.map */
