@@ -50,31 +50,36 @@ header {
     right: 10px;
 }
 
+#features-arrow:hover {
+    cursor: pointer;
+}
+
+#company-arrow:hover {
+    cursor: pointer;
+}
+
 #register {
     border: 1px solid;
     border-radius: 10px;
     padding: 10px 20px;
-    color: $Almost-White;
-    background-color: $Almost-Black;
-
-    &:hover {
-        @include invert-color();
-    }
-}
-
-#login {
     
+    
+
 }
+
 
 .dropdown {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     row-gap: 10px;
 
     img {
         margin-right: 10px;
     }
+
+    
+
 }
 
 
@@ -118,6 +123,7 @@ header {
 
     &:hover {
         @include invert-color();
+        cursor: pointer;
     }
     
     
@@ -151,7 +157,7 @@ header {
     .nav-items {
         flex-direction: column;
         position: fixed;
-        background-color: lightblue;
+        background-color: $Almost-White;
         inset: 0 0 0 40%;
         display: none;
         
@@ -180,10 +186,11 @@ header {
     }
 
     .dropdown {
-        background-color: lightblue;
+        background-color: $Almost-White;
         position: relative;
         top: 10px;
         left: 30px;
+
     }
 }
 
@@ -197,21 +204,44 @@ header {
     .nav-container {
         display: flex;
         flex-direction: row;
-        justify-content: start;
         column-gap: 50px;
     }
     
     .nav-items {
-        justify-content: space-evenly;
-        width: 500px;
+        justify-content: flex-start;
+        display: flex;
+        column-gap: 20px;
+        width: 100%;
+
+        a {
+            color: $Medium-Gray;
+
+            &:hover {
+                color: $Almost-Black;
+                cursor: pointer;
+            }
+        }
+        
     }
 
     .close-icon {
         display: none;
     }
 
+    .login-register {
+        margin-left: auto;
+    }
+
     #login {
-        margin-right: 30px;
+        margin-right: 10px;
+        
+    }
+
+    #register {
+        &:hover {
+            color: $Almost-Black;
+            
+        }
     }
 
     .dropdown {
@@ -220,8 +250,12 @@ header {
         position: fixed;
         box-shadow: 2px 2px 10px $Medium-Gray;
         padding: 20px;
-        
+        display: none;
 
+    }
+
+    #features-dropdown {
+        margin-right: 60px;
     }
 
         

@@ -34,21 +34,23 @@ header {
   right: 10px;
 }
 
+#features-arrow:hover {
+  cursor: pointer;
+}
+
+#company-arrow:hover {
+  cursor: pointer;
+}
+
 #register {
   border: 1px solid;
   border-radius: 10px;
   padding: 10px 20px;
-  color: hsl(0, 0%, 98%);
-  background-color: hsl(0, 0%, 8%);
-}
-#register:hover {
-  color: hsl(0, 0%, 8%);
-  background-color: hsl(0, 0%, 98%);
 }
 
 .dropdown {
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 10px;
 }
@@ -89,6 +91,7 @@ header {
 .learn-more:hover {
   color: hsl(0, 0%, 8%);
   background-color: hsl(0, 0%, 98%);
+  cursor: pointer;
 }
 
 .images-container {
@@ -115,7 +118,7 @@ header {
   .nav-items {
     flex-direction: column;
     position: fixed;
-    background-color: lightblue;
+    background-color: hsl(0, 0%, 98%);
     inset: 0 0 0 40%;
     display: none;
   }
@@ -136,7 +139,7 @@ header {
     margin: 0 auto;
   }
   .dropdown {
-    background-color: lightblue;
+    background-color: hsl(0, 0%, 98%);
     position: relative;
     top: 10px;
     left: 30px;
@@ -150,19 +153,34 @@ header {
   .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: start;
     -moz-column-gap: 50px;
          column-gap: 50px;
   }
   .nav-items {
-    justify-content: space-evenly;
-    width: 500px;
+    justify-content: flex-start;
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    width: 100%;
+  }
+  .nav-items a {
+    color: hsl(0, 0%, 41%);
+  }
+  .nav-items a:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
   }
   .close-icon {
     display: none;
   }
+  .login-register {
+    margin-left: auto;
+  }
   #login {
-    margin-right: 30px;
+    margin-right: 10px;
+  }
+  #register:hover {
+    color: hsl(0, 0%, 8%);
   }
   .dropdown {
     background-color: hsl(0, 0%, 98%);
@@ -170,6 +188,10 @@ header {
     position: fixed;
     box-shadow: 2px 2px 10px hsl(0, 0%, 41%);
     padding: 20px;
+    display: none;
+  }
+  #features-dropdown {
+    margin-right: 60px;
   }
   .icon-menu {
     display: none;

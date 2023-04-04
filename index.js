@@ -6,13 +6,16 @@ const company_arrow = document.querySelector("#company-arrow");
 const features_arrow = document.querySelector("#features-arrow");
 const company_dropdown = document.querySelector("#company-dropdown");
 const features_dropdown = document.querySelector("#features-dropdown");
+const body = document.querySelector("body");
 
 function openMobileMenu() {
     nav_popup.style.display = "flex";
+    body.style.background = "rgba(0, 0, 0, 0.5)";
 }
 
 function closeMobileMenu() {
     nav_popup.style.display = "none";
+    body.style.background = "rgba(0, 0, 0, 0)";
 }
 
 function toggleFeatures() {
@@ -43,3 +46,8 @@ close_icon.addEventListener("click", closeMobileMenu);
 company_arrow.addEventListener("click", toggleCompany);
 
 features_arrow.addEventListener("click", toggleFeatures);
+
+if (screen.width > 899) {
+    nav_popup.style.display = "flex";
+}
+
