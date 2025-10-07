@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned a more optimal way to create responsive navbars. I prioritized mobiile-first.
+I learned a more optimal way to create responsive navbars. I prioritized mobile-first.
 
 
 ### Continued development
